@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Filtrowanie</title>
+	<meta name="description" content="Prosty mechanizm filtrowania">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		*{
+			
+			font-family: sans-serif;
+		}
+		body {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+
+			background: rgb(9,9,121); background: linear-gradient(315deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 91%);
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.item {
+			background:#fff;
+			padding: 20px;
+			margin: 10px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+			width: calc(33.33% - 20px);
+		}
+		
+		.item img {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		.filter {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		
+		.filter label {
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="filter">
+		<label for="category">Kategoria:</label>
+		<select id="category">
+			<option value="all">Wszystko</option>
+			<option value="literatura">Literatura</option>
+			<option value="artandartch">Sztuka i Architektura</option>
+			<option value="filozofia">Filozofia</option>
+			<option value="history">Historia</option>
+		</select>
+	</div>
+	<div class="container">
+		<div class="item" data-category="literatura">
+			<img src="https://static5.tezeusz.pl/recommended_big/images/45/ce/c8/literatura-grecka-tom-i-cz-1-literatura-archaiczna-1931-r-tadeusz-sinko.jpeg" alt="literatura grecka">
+			<h3>Literatura Grecji</h3>
+			<p>Literatura grecka ma długą i bogatą historię sięgającą kilku tysięcy lat. Starożytna literatura grecka, w tym poezja, dramat, filozofia i proza, wywarła ogromny wpływ na kulturę i literaturę zachodnią.
+                Najstarsze zachowane greckie dzieła literackie to eposy Homera: Iliada i Odyseja, powstałe w VIII wieku p.n.e. Homer był również autorem Hymnów Homeryckich, krótkich wierszy poświęconych bogom greckim. Innymi ważnymi autorami starożytnej Grecji byli dramaturdzy Ajschylos, Sofokles i Eurypides, którzy napisali wiele tragedii i komedii, takich jak Antygona, Medea i Orestea. W dziedzinie filozofii najważniejszymi postaciami byli Sokrates, Platon i Arystoteles, którzy napisali wiele dzieł dotyczących etyki, metafizyki i polityki.
+                W czasach nowożytnych, literatura grecka rozwijała się w kilku kierunkach. W okresie romantyzmu pojawili się tacy autorzy jak Dionysios Solomos, który napisał hymn narodowy Grecji, oraz Alexandros Rizos Rangavis, który tworzył wiersze o tematyce historycznej i politycznej. W XX wieku, grecka literatura zyskała na znaczeniu, a wśród najważniejszych autorów są Nikos Kazantzakis, autor Zorby greckiego, i Giorgos Seferis, laureat Nagrody Nobla w dziedzinie literatury w 1963 roku.
+                W dzisiejszych czasach, literatura grecka jest wciąż żywa i zróżnicowana, a wśród ważnych współczesnych autorów można wymienić Margaritę Karapanou, Christosa Chryssopoulosa, Jorgosa Ioannou, Petrosa Markarisa i Eleni Vakalo. Wiele z tych dzieł odzwierciedla zmieniającą się sytuację polityczną i społeczną w Grecji.
+                Współczesna literatura grecka obejmuje wiele ważnych i popularnych dzieł, które odzwierciedlają zmieniającą się sytuację społeczną i polityczną w kraju. Oto kilka z najpopularniejszych dzieł greckiej literatury współczesnej:
+                "Zorba grecki" autorstwa Nikosa Kazantzakisa - powieść opowiadająca o przygodach młodego pisarza, który przybywa do Grecji i poznaje tajemniczego mężczyznę o imieniu Alexis Zorba.
+                "Pierwsza krew" autorstwa Petrosa Markarisa - powieść opowiadająca o życiu ludzi w małej greckiej wiosce, które zostają dotknięte kryzysem finansowym.
+                "Patagōnia" autorstwa Giannisa Palavosa - powieść opowiadająca historię greckiego emigranta, który próbuje odnaleźć swoją drogę w Argentynie.
+                "Trzecia ręka" autorstwa Yorgosa Ioannou - powieść kryminalna opowiadająca historię detektywa próbującego rozwiązać serię morderstw.
+                "Książka o milczeniu" autorstwa Eleni Vakalo - zbiór poetycki, który łączy surrealizm, modernizm i filozofię, aby przemyśleć naturę ludzkiego doświadczenia.
+                "Wschód i zachód" autorstwa Fotinisa Grapasa - powieść, która opowiada o życiu dwóch młodych ludzi, jednego z Aten, a drugiego z wsi na Krecie, którzy próbują odnaleźć swoje miejsce w świecie.
+                "Dziewczyna i pięć strun" autorstwa Giorgosa Skarimbas - powieść, która opowiada o życiu młodej dziewczyny, która chce zostać muzykiem, ale musi stawić czoła przeszkodom związanym z jej płcią.
+                Te i wiele innych dzieł stanowią ważny wkład w grecką literaturę współczesną i przyczyniają się do zachowania i rozwijania dziedzictwa kulturowego kraju.
+                </p>
+		</div>
+		<div class="item" data-category="artandartch">
+			<img src="https://argonaut.edu.pl/images/Architektura/swiatynia-hery-w-paestum-architektura-grecka.jpg" alt="Sztuka i architektura grecji">
+			<h3>Sztuka i Architektura Grecji</h3>
+			<p>Sztuka grecka była jednym z najważniejszych i najbardziej wpływowych dziedzictw starożytnej Grecji. Została rozwinięta w okresie od VI do IV wieku p.n.e. i miała duży wpływ na sztukę europejską i azjatycką.
+                Sztuka grecka była zróżnicowana i obejmowała różne dziedziny, takie jak architektura, rzeźba, malarstwo, ceramika i mozaika. Jedną z najważniejszych cech sztuki greckiej było jej idealizowanie człowieka i zwracanie uwagi na piękno, proporcje i harmonię. Sztuka grecka wyrażała także ważne idee i wartandartchości, takie jak heroizm, mądrość, piękno i wolność.
+                Architektura była jedną z najważniejszych dziedzin sztuki greckiej. Grecy rozwijali wiele innowacyjnych technik budowlanych, takich jak kolumny doryckie, jońskie i korynckie, oraz tworzyli imponujące budowle, takie jak Partandartchenon w Atenach. Zdobienia architektoniczne, takie jak fryzy, metopy i tympanony, były często dekorowane rzeźbami i malowidłami.
+                Rzeźba była także ważnym elementem sztuki greckiej. Rzeźby przedstawiały ludzi, bogów i mityczne stworzenia i często odzwierciedlały idee i wartandartchości greckiej kultury. Przykładami znanych rzeźb greckich są m.in. Posąg Zeusa w Olimpii, Wenus z Milo i Doryforos Polikletesa.
+                Malarstwo greckie, chociaż było mniej znane niż architektura i rzeźba, także odgrywało ważną rolę w sztuce greckiej. Malowidła często dekorowały naczynia i wazy, a ich tematyka obejmowała sceny mitologiczne, religijne i codzienne życie. Ważnymi przykładami są malowidła na Wazie François oraz malowidła z pałacu Knossos na Krecie.
+                Sztuka grecka wpłynęła na wiele późniejszych kultur i miała ogromny wpływ na rozwój sztuki europejskiej i zachodniej. Dzisiaj zachowane dzieła sztuki greckiej są uważane za jedne z najcenniejszych dziedzictw kulturowych i znajdują się w muzeach i galeriach sztuki na całym świecie.
+                Ze względu na rozległą historię sztuki greckiej, istnieje wiele znanych artandartchystów, którzy przyczynili się do rozwoju różnych dziedzin sztuki. Poniżej przedstawiam kilku z nich:
+                Fidiasz - rzeźbiarz i architekt, znany z tworzenia niektórych z najważniejszych dzieł sztuki greckiej, takich jak Posąg Zeusa w Olimpii i Partandartchenon w Atenach.
+                Polikletes - rzeźbiarz, twórca Doryforosa, rzeźby uważanej za arcydzieło sztuki greckiej, która była wzorem dla późniejszych artandartchystów.
+                Myron - rzeźbiarz, twórca słynnej rzeźby Dyskobola, która przedstawiała sportowca w trakcie rzutu dyskiem.
+                Apelles - malarz, znany z tworzenia portretów i scen mitologicznych, jego prace były bardzo cenione przez starożytnych Greków.
+                Praksyteles - rzeźbiarz, który skupiał się na przedstawianiu kobiecej urody, twórca m.in. rzeźby Afrodyty z Knidos.
+                Zeuksis - malarz, słynny z tworzenia hiperrealistycznych malowideł i techniki perspektywy, jego prace były bardzo cenione przez starożytnych Greków.
+                To tylko kilku z wielu znanych artandartchystów greckich, którzy przyczynili się do rozwoju sztuki w starożytnej Grecji.<br><br>
+                Architektura grecka jest jednym z najważniejszych i najbardziej wpływowych dziedzin sztuki starożytnej Grecji. Jest to architektura, która rozwijała się przez wiele wieków, od okresu archaicznego aż do okresu hellenistycznego, i pozostaje do dziś źródłem inspiracji dla wielu architektów na całym świecie.
+                Architektura grecka charakteryzuje się przede wszystkim harmonią proporcji i estetyką, co wynika z zastosowania zasad geometrii i matematyki w procesie projektowania. Najważniejszymi elementami architektonicznymi starożytnej Grecji były kolumny, belki i fryzy, które były często zdobione rzeźbami i innymi dekoracjami.
+                W architekturze greckiej wyróżnia się trzy podstawowe style: dorycki, joński i koryncki. Styl dorycki charakteryzuje się prostotą i surowością form, a najważniejszym jego elementem jest kolumna dorycka, która ma charakterystyczne rowki zwane płycinami. Styl joński cechuje się bardziej delikatnymi i eleganckimi formami, a kolumny jońskie posiadają woluty (zwinięcia) w górnej części kolumny. Styl koryncki to najbardziej złożony i ozdobny styl, a kolumny korynckie zdobią liście akantu.
+                Najważniejszymi zabytkami architektury greckiej są świątynie, teatry i amfiteatry. Najważniejszymi przykładami architektury greckiej są Partandartchenon w Atenach, świątynia Zeusa w Olimpii, świątynia Ateny Nike na Akropolu w Atenach, czy teatr w Epidauros.
+                Architektura grecka wpłynęła na wiele późniejszych stylów architektonicznych, takich jak neoklasycyzm i modernizm, a jej wpływ wciąż jest obecny w dzisiejszych czasach.
+                W czasach starożytnych Grecji, architektura była zazwyczaj dziełem anonimowych rzemieślników i budowniczych. Jednakże, istnieje kilka znanych nazwisk związanych z architekturą grecką, którzy są uważani za pionierów i innowatorów w tej dziedzinie. Oto kilku z nich:
+                Fidiasz - był rzeźbiarzem i architektem, który jest znany z tworzenia niektórych z najważniejszych dzieł sztuki greckiej, takich jak Partandartchenon w Atenach i Posąg Zeusa w Olimpii.
+                Iktinos - był greckim architektem, który pracował razem z Kallikratesem przy projektowaniu Partandartchenonu na Akropolu w Atenach.
+                Kallikrates - również był greckim architektem, który pracował razem z Iktinosem przy projektowaniu Partandartchenonu. Był także projektantem świątyni Nike Apteros na Akropolu.
+                Mnesikles - był greckim architektem, który projektował świątynię Hefajstosa na Agorze Rzymskiej w Atenach.
+                Hippodamos - był greckim urbanistą, który zaprojektował miasto Pireus i zapoczątkował koncepcję planowania miast według regularnej siatki ulic.
+                Te nazwiska to tylko kilka z wielu znanych greckich architektów, którzy przyczynili się do rozwoju architektury w starożytnej Grecji i wywarli wpływ na wiele późniejszych stylów architektonicznych.
+                </p>
+		</div>
+		<div class="item" data-category="filozofia">
+			<img src="https://www.eduforum.pl/wp-content/uploads/2017/08/filozofia-696x465.jpg" alt="filozofia grecka">
+			<h3>Filozofia Grecji</h3>
+			<p>Filozofia grecka jest uważana za jedno z najważniejszych dziedzictw kulturowych starożytnej Grecji. Znana jest z wprowadzenia wielu fundamentalnych pojęć i idei, które wywarły wpływ na myśl zachodnią przez tysiące lat. Filozofowie starożytnej Grecji zastanawiali się nad istotą rzeczywistości, istnieniem, etyką, polityką i wiedzą.
+                Pierwsi filozofowie greccy byli tzw. presokratykami, którzy żyli i tworzyli w VI i V wieku p.n.e. Byli to myśliciele tacy jak Tales z Miletu, Anaksymander, Anaksymenes, Parmenides, Heraklit czy Empedokles. Zastanawiali się oni nad tym, czym jest rzeczywistość, skąd pochodzi, jak powstał świat i człowiek, a także nad tym, jakie są prawa rządzące przyrodą. Ich filozofia opierała się na wierze, że istnieją stałe prawa rządzące światem, które można odkryć przez rozumowanie i obserwację.
+                Sokrates, żyjący w V wieku p.n.e., był jednym z najbardziej znanych filozofów greckich. Uważał, że istnieje tylko jedna wiedza, a wszelkie inne rzeczy, które ludzie uważają za wiedzę, są tylko wiarą lub przekonaniem. Sokrates uważał, że jedyną metodą osiągnięcia prawdziwej wiedzy jest prowadzenie dialogu i zadawanie pytań.
+                Platon, uczeń Sokratesa, uważany jest za jednego z największych filozofów w historii. W swoich dziełach, takich jak "Państwo" czy "Dialogi", Platon rozwijał swoje idee dotyczące sprawiedliwości, demokracji i roli filozofii w życiu człowieka. W swojej filozofii wyróżniał świat rzeczywisty (który jest tylko cieniem prawdziwej rzeczywistości) i świat idei, który jest jedynym źródłem prawdziwej wiedzy.
+                Arystoteles, uczeń Platona, był jednym z najważniejszych filozofów greckich. W swoich dziełach zajmował się wieloma kwestiami, w tym etyką, polityką, logiką i fizyką. Wprowadził wiele pojęć, które są używane do dzisiaj, takich jak kategoria, syllogizm i akt/potencjał.
+                Filozofia grecka miała ogromny wpływ na kulturę i myśl zachodnią, wprowadzając wiele ważnych koncepcji, takich jak demokracja, etyka, filozofia polityczna i wiele innych. Dziedzictwo greckiej filozofii jest niezwykle.
+                </p>
+		</div>
+		<div class="item" data-category="history">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Map_of_Greece%2C_Archipelago_and_part_of_Anadoli%3B_Louis_Stanislas_d%27Arcy_Delarochette_1791.jpg/400px-Map_of_Greece%2C_Archipelago_and_part_of_Anadoli%3B_Louis_Stanislas_d%27Arcy_Delarochette_1791.jpg" alt="Historia grecka">
+			<h3>Historia Grecji</h3>
+			<p>Grecja jest jednym z najstarszych krajów na świecie, a jej historia sięga ponad 5 tysięcy lat wstecz. Kultura grecka, sztuka i filozofia odegrały ogromną rolę w historii Zachodu.
+                Starożytna Grecja była podzielona na wiele małych miast-państw, zwanych polisami. Wiele z nich stało się znane dzięki swoim osiągnięciom kulturalnym i naukowym, takim jak Ateny, Spartandartcha, Korint czy Teby.
+                W VI wieku p.n.e. w Atenach pojawiła się demokracja, która stała się jednym z fundamentów cywilizacji zachodniej. W V wieku p.n.e. Grecja osiągnęła swój złoty wiek, kiedy to osiągnięcia w dziedzinie literatury, sztuki i filozofii były niezwykle wysokie. To właśnie wtedy powstały takie dzieła jak Iliada i Odyseja Homera, sztuka dramatyczna autorstwa Sofoklesa i Eurypidesa oraz filozofia Sokratesa, Platona i Arystotelesa.
+                W IV wieku p.n.e. Grecja została podbita przez Macedonię, a potem przez Rzym, co ostatecznie doprowadziło do upadku starożytnej cywilizacji greckiej. Jednak, kultura grecka nadal miała ogromny wpływ na rozwój sztuki, nauki i filozofii w całym świecie Zachodnim.
+                W 1821 roku Grecja ogłosiła niepodległość od Turcji, co zainicjowało nowy etap w historii kraju. W latach 60. i 70. XX wieku miała miejsce renowacja kultury greckiej, a w 1981 roku Grecja dołączyła do Unii Europejskiej, co przyczyniło się do poprawy jej gospodarki i rozwoju kraju.
+                </p>
+		</div>
+	</div>
+	<script>
+		const categorySelect = document.getElementById('category');
+		const items = document.querySelectorAll('.item');
+		
+		categorySelect.addEventListener('change', () => {
+			const category = categorySelect.value;
+			items.forEach(item => {
+				if (category === 'all') {
+					item.style.display = 'block';
+				} else if (item.getAttribute('data-category') !== category) {
+					item.style.display = 'none';
+				} else {
+					item.style.display = 'block';
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title></title>
+	<meta name="description" content="Prosty mechanizm filtrowania">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+	*{
+			color:white;
+			font-family: sans-serif;
+		}
+    body{
+        text-align:center;
+        background: rgb(9,9,121); background: linear-gradient(315deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 91%);
+    }
+
+	.btn-two{
+		color: black;
+	}
+	.form{
+		color: black;
+	}
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Skontaktuj się z nami</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Adres</h2>
+			<p>ul. Kwiecista 82a</p>
+			<p>30-000 Kraków</p>
+		</section>
+
+		<section>
+			<h2>Telefon</h2>
+			<p>+48 733 928 190</p>
+		</section>
+
+		<section>
+			<h2>E-mail</h2>
+			<p><a href="mailto:kulturagrecka@pomoc.pl">kulturagrecka@pomoc.pl</a></p>
+		</section>
+
+		<section>
+			<h2>Formularz kontaktowy</h2>
+			<form action="mailer.php" method="post">
+				<label for="name">Imię i nazwisko:</label>
+				<input class="form" type="text" id="name" name="name" required><br>
+
+				<label for="email">Adres e-mail:</label>
+				<input class="form" type="email" id="email" name="email" required><br>
+
+				<label for="message">Wiadomość:</label>
+				<textarea class="form" id="message" name="message" required></textarea><br>
+
+				<input class="btn-two" type="submit" value="Wyślij" >
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Kultura grecka</p>
+	</footer>
+</body>
+</html>
